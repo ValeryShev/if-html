@@ -2,23 +2,15 @@
     margin: 0;
 }
 
-body{
-    text-align: center;
-}
-
 section {
+    margin: 120px 140px;
     background-color: #FFFFFF;
-    padding: 120px 0;
 }
 
-.container {
-    max-width: 1080px;
-    margin: 0px;
-}
-
-.container h1 {
+.header {
     color: #383838;
     line-height: 47px;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -26,25 +18,20 @@ section {
     width: 100px;
     height: 4px;
     background-color: #F5BD41;
-    display: inline-block;
-    margin-bottom: 80px;
+    display: block;
+    margin: 10px auto 90px;
 }
 .offers {
     display: flex;
-    justify-content: center;
-    margin: 0 -10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-content: space-around;
 }
 .offer {
-    display: flex;
-    padding: 0 10px;
+    text-align: center;
+    justify-content: space-between;
 }
-.offer img {
-    display: flex;
-    justify-content: center;
-    width: 80px;
-    height: 65px;
-    margin-bottom: 48px;
-}
+
 .offer_type {
-    width: 100px;
+    margin-top: 55px;
 }
