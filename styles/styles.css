@@ -12,6 +12,8 @@ section {
     line-height: 47px;
     text-align: center;
     margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 40px;
 }
 
 .line {
@@ -23,9 +25,7 @@ section {
 }
 .offers {
     display: flex;
-    margin-right: 20px;
-    margin-left: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .offer {
     text-align: center;
