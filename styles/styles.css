@@ -1,9 +1,14 @@
 * {
     margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 1440px;
 }
 
-section {
-    margin: 120px 140px;
+.offers_t {
+    width: 100vw;
+    margin: 120px 0;
     background-color: #FFFFFF;
 }
 
@@ -16,18 +21,22 @@ section {
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
+
+}
+.offers_t .header::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100px;
+    margin: 10px auto 110px;
+    background-color:#F5BD41;
 }
 
-.line {
-    width: 100px;
-    height: 4px;
-    background-color: #F5BD41;
-    display: block;
-    margin: 10px auto 90px;
-}
 .offers {
     display: flex;
     justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .offer {
     text-align: center;
