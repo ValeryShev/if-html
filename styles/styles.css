@@ -35,6 +35,7 @@ body {
 .offers {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     margin-left: 25px;
     margin-right: 25px;
 }
