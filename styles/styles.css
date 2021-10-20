@@ -2,9 +2,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    width: 1440px;
+}
 
-section {
-    margin: 120px 140px;
+.offers_t {
+    width: 100vw;
+    margin: 120px 0;
     background-color: #FFFFFF;
 }
 
@@ -17,18 +21,22 @@ section {
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
+
+}
+.offers_t .header::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100px;
+    margin: 10px auto 110px;
+    background-color:#F5BD41;
 }
 
-.line {
-    width: 100px;
-    height: 4px;
-    background-color: #F5BD41;
-    display: block;
-    margin: 10px auto 90px;
-}
 .offers {
     display: flex;
     justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .offer {
     text-align: center;
@@ -44,3 +52,64 @@ section {
     text-align: center;
     color: #383838;
 }
+
+.homes_loves{
+    width: 100vw;
+    height: 828px;
+    margin: 0;
+    padding-top: 20px;
+    background: #EAF0F9;
+}
+.homes_loves .header {
+    color: #383838;
+    line-height: 47px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.slider {
+    width: 40px;
+    height: 40px;
+    color: #F3F3F4;
+}
+
+.homes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home_photo {
+    display: block;
+    margin: 70px 0 0 25px;
+    width: 296px;
+    height: 296px;
+    justify-content: space-between;
+}
+.homes_type{
+    color: #3077C6;
+    line-height: 28px;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.location {
+    color: #BFBFBF;
+    line-height: 28px;
+    text-align: left;
+    padding-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    }
+
