@@ -112,21 +112,17 @@ body {
     margin: 0 auto;
     background-color: #10367C;
 }
-
-.menu1{
-    padding-right: 105px;
+.footer_container {
+    padding: 120px 270px 120px 105px;
 }
 
-.menu {
+.footer_menu {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 120px;
-    padding-right: 270px;
-    margin-left: 105px;
-}
+    }
 
-.menu_h {
+.menu_header {
     font-size: 20px;
     font-weight: 500;
     font-style: normal;
@@ -143,7 +139,6 @@ body {
 }
 .rights {
     margin-top: 64px;
-    padding-left: 105px;
     display: flex;
     font-size: 14px;
     font-weight: 400;
