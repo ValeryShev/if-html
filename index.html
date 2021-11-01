@@ -2,114 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TripHouse</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./styles/fonts.css">
 </head>
 <body>
-<section class="top_sec">
-  <header class="header">
-      <div class="header_shadow"></div>
-    <div class="header_container">
-    <div class="header_logo">
-        <div>
-            <img src="images/logo_vector.png" alt="TripHouse_logo">
-        </div>
-        <div class="header_menu">
-            <div class="header_link">Stays</div>
-            <div class="header_link">Attractions</div>
-            <div class="header_images">
-                <img src="images/night.png" alt="nightMode">
+<header class="header">
+    <div class="container">
+        <div class="header_block">
+            <div class="header_logo">
+                <img src="images/logo_vector.svg" alt="TripHouse_logo">
             </div>
-            <div class="header_images">
-                <img src="images/accountCircle.png" alt="account">
-            </div>
+            <nav class="header_menu">
+                <div class="header_link">Stays</div>
+                <div class="header_link">Attractions</div>
+                <div class="header_images">
+                    <img src="images/night.svg" alt="nightMode">
+                </div>
+                <div class="header_images">
+                    <img src="images/accountCircle.svg" alt="account">
+                </div>
+            </nav>
         </div>
-    </div>
         <div class="slogan">Discover stays<br>
-        to live, work or just relax</div>
-        <div class="search_setting">
-            <div class="srch_setting">Your destination or hotel name</div>
-            <div class="srch_setting">Check-in — Check-out</div>
-        </div>
-            <div class="header_search">
-                <div class="search_input">
-                    <div class="srch_input">
-                        <input type="text" name="destination" id="name" placeholder="New York" required>
-                        <label for="name"></label>
-                    </div>
-                    <div class="srch_input_data">
-                        <input type="date" name="dates" id="date" required>
-                        <label for="date"></label>
-                    </div>
-                    <div class="srch_input">
-                        <input type="text" name="destination" id="number" required>
-                        <label for="number"></label>
-                    </div>
-                    <div class="search_button">
-                        <button class="srch_btn">Search</button>
-                    </div>
+            to live, work or just relax</div>
+        <form class="search_form">
+            <div class="form_block">
+                <div class="input_block">
+                    <input class="form_input" type="text" name="hotel" id="destination">
+                    <label for="destination" class="label">Your destination or hotel name</label>
                 </div>
             </div>
-        </div>
-        <div class="header_download">
-            <div class="download_icon">
-                <img src="images/google.png" alt="googlePlay">
+            <div class="form_block">
+                <div class="input_block">
+                    <input class="form_input" type="text" name="date" id="in_date">
+                    <label for="in_date" class="label">Check-in</label>
+                    <input class="input_date" type="text" name="date" id="out_date">
+                    <label for="out_date" class="label">Check-out</label>
+                </div>
             </div>
-            <div class="download_icon">
-                <img src="images/appstore.png" alt="AppStore">
+            <div class="form_block">
+                <div class="input_block">
+                    <input class="form_input" type="text" name="adults" id="adults">
+                    <label for="adults" class="label">Adults</label>
+                    <input class="form_input" type="text" name="children" id="children">
+                    <label for="children" class="label">Children</label>
+                    <input class="form_input" type="text" name="rooms" id="rooms">
+                    <label for="rooms" class="label">Rooms</label>
+                </div>
             </div>
+            <button class="form_button">Search</button>
+        </form>
+    <div class="header_download">
+        <div class="download_icon">
+            <img src="images/google.svg" alt="googlePlay">
         </div>
+        <div class="download_icon">
+            <img src="images/appstore.svg" alt="AppStore">
+        </div>
+    </div>
+    </div>
 </header>
-</section>
 <section class="offers_sec">
+    <div class="container">
     <div class="offers_header">What do we offer</div>
     <div class="offers">
         <div class="offer">
-            <img src="images/earphones.png" alt="Earphones wth mic">
+            <img src="images/earphones.svg" alt="Earphones wth mic">
             <p class="offer_type">Support 24/7</p>
         </div>
         <div class="offer">
-            <img src="images/chat.png" alt="Chat">
+            <img src="images/chat.svg" alt="Chat">
             <p class="offer_type">Communicate directly</p>
         </div>
         <div class="offer">
-            <img src="images/computer.png" alt="book_online">
+            <img src="images/computer.svg" alt="book_online">
             <p class="offer_type">Book online</p>
         </div>
         <div class="offer">
-            <img src="images/like.png" alt="like">
+            <img src="images/like.svg" alt="like">
             <p class="offer_type">Real guest reviews</p>
         </div>
     </div>
+    </div>
 </section>
 <section class="homes_sec">
+    <div class="container">
     <div class="homes_header">Homes guests loves</div>
     <div class="homes">
         <div class="home_photo">
-            <img src="images/leopold.png" alt="Hotel Leopold">
+            <img class="photo" src="images/leopold.png" alt="Hotel Leopold">
             <p class="homes_type">Hotel Leopold</p>
             <p class="location">Saint Petersburg, Russia</p>
         </div>
         <div class="home_photo">
-            <img src="images/sunshine.png" alt="Apartment Sunshine">
+            <img class="photo" src="images/sunshine.png" alt="Apartment Sunshine">
             <p class="homes_type">Apartment Sunshine</p>
             <p class="location">Santa Cruz de Tenerife, Spain</p>
         </div>
         <div class="home_photo">
-            <img src="images/kunerad.png" alt="Villa Kunerad">
+            <img class="photo" src="images/kunerad.png" alt="Villa Kunerad">
             <p class="homes_type">Villa Kunerad</p>
             <p class="location">Vysokie Tatry, Slowakia</p>
         </div>
         <div class="home_photo">
-            <img src="images/friendship.png" alt="Hostel Friendship">
+            <img class="photo" src="images/friendship.png" alt="Hostel Friendship">
             <p class="homes_type">Hostel Friendship</p>
             <p class="location">Berlin, Germany</p>
         </div>
     </div>
+    </div>
 </section>
 <footer class="footer">
-    <div class="footer_container">
+    <div class="container">
         <div class="footer_menu">
             <div>
                 <p class="menu_header">About</p>
