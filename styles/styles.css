@@ -29,7 +29,7 @@ html, body {
 
 }
 .header_shadow {
-    background-color: rgba(18 18 18 .25);
+    background-color: rgba(18 18 18 /25);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -84,20 +84,20 @@ html, body {
 
 .form_block {
     display: flex;
-    /*width: 100%;*/
+    align-items: center;
+    width: 100%;
     height: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 21px;
     border-radius: 8px;
     transition: all .2s;
     position: relative;
     gap: 10px;
-    padding: 24px;
 }
 
-.form-destination {
-    width: 55%;
-}
-
-.dates-block {
+.date {
     border: 1px solid #CECECE;
 }
 
@@ -106,23 +106,18 @@ html, body {
     border-radius: 8px;
 }
 
+.label_block {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background-color: #FFFFFF;
+}
+
 .form_label {
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 21px;
-    /*color: #383838;*/
-    transform: translateY(20px);
+    transform: translateY(0);
     transform-origin: 0 0;
     transition: all .2s;
 }
-
-/*.labels-block {*/
-/*    position: absolute;*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*}*/
 
 .form_input {
     width: 100%;
@@ -139,14 +134,7 @@ html, body {
     outline: none;
 }
 
-.label-block {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-    background-color: #FFFFFF;
-}
-
-.form_input:focus ~ .label-block {
+.form_input:focus ~ .label_block {
     transform: translateY(-52px);
     font-size: 18px;
     font-weight: 400;
@@ -155,81 +143,6 @@ html, body {
     color: #FFFFFF;
     background: none;
 }
-
-/*.search_form {*/
-/*    display: flex;*/
-/*    height: 64px;*/
-/*    background-color: #FFFFFF;*/
-/*    margin-top: 145px;*/
-/*    border-radius: 8px;*/
-/*}*/
-
-/*.form_destination{*/
-/*    width: 55%;*/
-/*}*/
-
-/*.form_date {*/
-/*    border: 1px solid #CECECE;*/
-/*}*/
-
-/*.form_block {*/
-/*    display: flex;*/
-/*    position: relative;*/
-/*    height: 100%;*/
-/*    border-radius: 8px;*/
-/*    transition: all .2s;*/
-/*    gap: 10px;*/
-/*    padding: 24px;*/
-/*}*/
-/*.form_block:hover {*/
-/*    border: 3px solid #F5BD41;*/
-/*    border-radius: 8px;*/
-/*}*/
-
-/*.form_label {*/
-/*    font-size: 18px;*/
-/*    font-weight: 400;*/
-/*    font-style: normal;*/
-/*    line-height: 21px;*/
-/*    !*color: #383838;*!*/
-/*    transform: translateY(20px);*/
-/*    transform-origin: 0 0;*/
-/*    transition: all .2s;*/
-/*}*/
-
-/*.form_input {*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    border: none;*/
-/*    border-radius: 8px;*/
-/*    outline: none;*/
-/*    transition: all .2s;*/
-/*}*/
-
-/*.form_input::placeholder{*/
-/*    color: transparent;*/
-/*}*/
-
-/*.form_input:focus{*/
-/*    outline: none;*/
-/*}*/
-
-/*.label_block {*/
-/*    top: 24px;*/
-/*    left: 24px;*/
-/*    background-color: #FFFFFF;*/
-/*}*/
-
-/*.form_input:focus + .label_block {*/
-/*    transform: translateY(-52px);*/
-/*    font-size: 18px;*/
-/*    font-weight: 400;*/
-/*    font-style: normal;*/
-/*    line-height: 21px;*/
-/*    color: #FFFFFF;*/
-/*    background: none;*/
-/*}*/
-
 
 .form_button {
     padding: 20px 55px;
