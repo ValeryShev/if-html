@@ -26,7 +26,6 @@ html, body {
     background-size: cover;
     min-width: 100vw;
     min-height: 100vh;
-
 }
 .header_shadow {
     background-color: rgba(18 18 18 /25);
@@ -39,6 +38,13 @@ html, body {
     justify-content: space-between;
     align-items: center;
 }
+
+.header_logo {
+    width: 205px;
+    height: 40px;
+    fill: #3077C6;
+}
+
 .header_menu {
     display: flex;
     align-items: center;
