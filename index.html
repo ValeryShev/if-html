@@ -30,6 +30,11 @@
                             <use href="icons.svg#account"></use>
                         </svg>
                     </div>
+
+                   
+
+
+
                 </nav>
             </div>
             <div class="slogan">Discover stays<br>
@@ -40,17 +45,19 @@
                     <label for="destination" class="form_label">Your destination or hotel name</label>
 
                 </div>
-                <div class="form_block date col-md-3 col-sm-12 col-xs-1">
+                <div class="form_block date col-md-3 col-sm-12 col-xs-6">
                     <input class="form_check_in" type="text" name="date" id="in_date" placeholder="Date">
                     <label for="in_date" class="form_label">Check-in</label>
                     <input class="form_check_out" type="text" name="date" id="out_date" placeholder="Date">
                     <label for="out_date" class="form_label">Check-out</label>
-
                 </div>
-                <div class="form_block people col-md-3 col-sm-12 col-xs-12">
-                    <p>Adults</p>
-                    <p>Children</p>
-                    <p>Rooms</p>
+                <div class="form_block people col-md-3 col-sm-12 col-xs-4">
+                    <input class="form_adults" type="text" name="people" id="adults" placeholder="Adults">
+                    <label for="adults" class="form_label">Adults</label>
+                    <input class="form_children" type="text" name="people" id="children" placeholder="Children">
+                    <label for="children" class="form_label">Children</label>
+                    <input class="form_children" type="text" name="people" id="rooms" placeholder="Rooms">
+                    <label for="rooms" class="form_label">Rooms</label>
                 </div>
                 <button class="form_button">Search</button>
             </form>
@@ -128,7 +135,7 @@
 </section>
 <section class="destinations_sec">
     <div class="container">
-        <h2 class="destinations_header">The best destinations</h2>
+        <h2>The best destinations</h2>
         <div class="dest_tabs">
             <input type="radio" id="tab_region" name="tab" checked="checked">
             <label for="tab_region">Regions</label>
@@ -218,7 +225,7 @@
 </section>
 <section class="reviews_sec">
     <div class="container">
-        <h2 class="reviews_header">Guests reviews</h2>
+        <h2>Guests reviews</h2>
         <div class="reviews">
             <div class="review_information">
                 <div class="review_photo">
