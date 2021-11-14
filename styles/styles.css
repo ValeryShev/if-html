@@ -1,19 +1,197 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body {
+html, body {
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+:root {
+    --columns-count: 12;
+}
+
+.container {
+    padding: 50px 105px 120px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(../images/top.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vw;
+    height: 100vh;
+    min-height: 900px;
+}
+.header_shadow {
+    position: absolute;
+    background-color: rgba(18, 18, 18, 0.25);
+    width: 100%;
+    height: 100vh;
+    min-height: 900px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    width: 205px;
+    height: 40px;
+    fill: #3077C6;
+}
+
+.header_menu {
+    display: flex;
+    align-items: center;
+}
+.header_link {
+    display: flex;
+    font-style: normal;
+    margin-right: 24px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.header_link:hover {
+    padding-bottom: 10px;
+    border-bottom: 4px solid #F5BD41;
+}
+.header_images {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 24px;
+    max-width: 90px;
+    max-height: 40px;
+}
+
+.slogan {
+    margin-top: 200px;
+    font-size: 50px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+.search_form {
+    display: flex;
+    height: 64px;
+    background-color: #FFFFFF;
+    margin-top: 145px;
+    border-radius: 8px;
+}
+
+.form_block {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 21px;
+    border-radius: 8px;
+    transition: all .2s;
+    position: relative;
+    gap: 10px;
+}
+.form_block p {
+    padding-left: 24px;
+}
+
+.date {
+    border: 1px solid #CECECE;
+}
+
+.form_block:hover {
+    border: 3px solid #F5BD41;
+    border-radius: 8px;
+}
+
+.label_block {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background-color: #FFFFFF;
+}
+
+.form_label {
+    transform: translateY(0);
+    transform-origin: 0 0;
+    transition: all .2s;
+}
+
+.form_input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: all .2s;
+}
+.form_input::placeholder{
+    color: transparent;
+}
+.form_input:focus{
+    outline: none;
+}
+
+.form_input:focus ~ .label_block {
+    transform: translateY(-52px);
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: none;
+}
+
+.form_button {
+    padding: 20px 55px;
+    background-color: #3077C6;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+}
+
+.header_download {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 120px auto 0;
+    padding-bottom: 120px;
+}
+.download_icon {
+    width: 135px;
+    height: 40px;
+    margin-right: 17px;
 }
 
 .offers_sec {
-    width: 100vw;
+    width: 100%;
     height: 569px;
     margin: 120px 0 0 0;
     background-color: #FFFFFF;
 }
 
-.header {
+.offers_header {
     color: #383838;
     line-height: 47px;
     text-align: center;
@@ -24,7 +202,7 @@ body {
     font-size: 40px;
 
 }
-.offers_sec .header::after {
+.offers_sec .offers_header::after {
     content: "";
     display: block;
     height: 4px;
@@ -42,11 +220,9 @@ body {
 .offer {
     text-align: center;
     justify-content: space-between;
-    width: 25%;
 }
 
 .offer_type {
-    margin-top: 45px;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -55,12 +231,12 @@ body {
 }
 
 .homes_sec{
-    width: 100vw;
-    height: 828px;
+    width: 100%;
     padding-top: 120px;
     background: #EAF0F9;
 }
-.homes_loves .header {
+
+.homes_header {
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
@@ -73,15 +249,19 @@ body {
 
 .homes {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
 }
 
 .home_photo {
     display: block;
-    margin: 70px 0 0 25px;
-    width: 296px;
-    height: 296px;
-    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 0 25px;
+}
+.photo {
+    width: 100%;
+    height: auto;
 }
 .homes_type{
     color: #3077C6;
@@ -106,8 +286,8 @@ body {
     font-size: 24px;
 }
 
-.footer_sec {
-    width: 100vw;
+footer {
+    width: 100%;
     height: 630px;
     margin: 0 auto;
     background-color: #10367C;
@@ -115,12 +295,23 @@ body {
 .footer_container {
     padding: 120px 270px 120px 105px;
 }
-
+.footer_logo {
+    display: none;
+}
 .footer_menu {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    }
+}
+
+.footer_list {
+    width: 33.33%;
+    list-style-type: none;
+}
+
+.menu_header a, .menu_items a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
 
 .menu_header {
     font-size: 20px;
@@ -146,4 +337,3 @@ body {
     line-height: 16px;
     color: #FFFFFF;
 }
-
