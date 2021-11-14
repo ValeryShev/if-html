@@ -128,6 +128,83 @@ h2:hover::after {
     fill: #FFFFFF;
 }
 
+.mobile_menu {
+    padding-left: 24px;
+}
+
+.menu_input {
+    opacity: 0;
+    height: 16px;
+}
+
+.menu_btn {
+    display: none;
+    width: 26px;
+    height: 26px;
+}
+
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    background-color: #FFFFFF;
+}
+
+.menu_btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu_btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu_box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    width: 100px;
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-align: center;
+    background: rgba(18, 18, 18, 0.2);
+}
+
+.menu_item {
+    display: block;
+    position: relative;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu_input:checked ~ .menu_btn > span {
+    transform: rotate(45deg);
+}
+
+.menu_input:checked ~ .menu_btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+.menu_input:checked ~ .menu_btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.menu_input:checked ~ .menu_box {
+    visibility: visible;
+    right: 0;
+    top: 12%;
+}
+
 .slogan {
     margin-top: 200px;
     font-size: 50px;
@@ -746,7 +823,7 @@ footer {
     }
 
     .header {
-        min-height: 500px;
+        min-height: 550px;
     }
 
     .header_shadow {
@@ -762,8 +839,12 @@ footer {
         height: 24px;
     }
 
-    .header_link {
+    .header_link_block {
         display: none;
+    }
+
+    .menu_btn {
+        display: flex;
     }
 
     .header_images {
@@ -773,7 +854,7 @@ footer {
     }
 
     .slogan {
-        margin-top: 50px;
+        margin-top: 40px;
         font-style: normal;
         font-weight: 500;
         font-size: 30px;
@@ -846,7 +927,7 @@ footer {
         width: 50%;
         display: flex;
         justify-content: center;
-        margin: 40px auto 0;
+        margin: 30px auto 0;
         padding-bottom: 0;
     }
 
