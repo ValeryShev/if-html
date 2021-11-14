@@ -10,119 +10,141 @@
 <body>
 <header class="header">
     <div class="header_shadow">
-    <div class="container">
-        <div class="header_block">
-            <div class="header_logo">
-                <img src="images/logo_vector.svg" alt="TripHouse_logo">
+        <div class="container">
+            <div class="header_block">
+                <svg class="header_logo">
+                    <use href="icons.svg#logo"></use>
+                </svg>
+                <nav class="header_menu">
+                    <div class="header_link">Stays</div>
+                    <div class="header_link">Attractions</div>
+                    <div class="header_images">
+                        <svg class="image">
+                            <use href="icons.svg#night"></use>
+                        </svg>
+                    </div>
+                    <div class="header_images">
+                        <svg class="image">
+                            <use href="icons.svg#account"></use>
+                        </svg>
+                    </div>
+                </nav>
             </div>
-            <nav class="header_menu">
-                <div class="header_link">Stays</div>
-                <div class="header_link">Attractions</div>
-                <div class="header_images">
-                    <img src="images/night.svg" alt="nightMode">
+            <div class="slogan">Discover stays<br>
+                to live, work or just relax</div>
+            <form class="search_form">
+                <div class="form_block destination">
+                    <input class="form_input" type="text" name="hotel" id="destination" placeholder="Destination">
+                    <div class="label_block">
+                        <label for="destination" class="form_label">Your destination or hotel name</label>
+                    </div>
                 </div>
-                <div class="header_images">
-                    <img src="images/accountCircle.svg" alt="account">
+                <div class="form_block date">
+                    <input class="form_input" type="text" name="date" id="in_date" placeholder="Date">
+                    <input class="form_input" type="text" name="date" id="out_date" placeholder="Date">
+                    <div class="label_block">
+                        <label for="in_date" class="form_label">Check-in</label>
+                        <label for="out_date" class="form_label">Check-out</label>
+                    </div>
                 </div>
-            </nav>
+                <div class="form_block">
+                    <p>Adults</p>
+                    <p>Children</p>
+                    <p>Rooms</p>
+                </div>
+                <button class="form_button">Search</button>
+            </form>
+            <div class="header_download">
+                <div class="download_icon">
+                    <img src="images/google.png" alt="googlePlay">
+                </div>
+                <div class="download_icon">
+                    <img src="images/appstore.svg" alt="AppStore">
+                </div>
+            </div>
         </div>
-        <div class="slogan">Discover stays<br>
-            to live, work or just relax</div>
-        <form class="search_form">
-            <div class="form_block destination">
-                <input class="form_input" type="text" name="hotel" id="destination" placeholder="Destination">
-                <div class="label_block">
-                    <label for="destination" class="form_label">Your destination or hotel name</label>
-                </div>
-            </div>
-            <div class="form_block date">
-                <input class="form_input" type="text" name="date" id="in_date" placeholder="Date">
-                <input class="form_input" type="text" name="date" id="out_date" placeholder="Date">
-                <div class="label_block">
-                    <label for="in_date" class="form_label">Check-in</label>
-                    <label for="out_date" class="form_label">Check-out</label>
-                </div>
-            </div>
-            <div class="form_block">
-                <p>Adults</p>
-                <p>Children</p>
-                <p>Rooms</p>
-            </div>
-            <button class="form_button">Search</button>
-        </form>
-    <div class="header_download">
-        <div class="download_icon">
-            <img src="images/google.svg" alt="googlePlay">
-        </div>
-        <div class="download_icon">
-            <img src="images/appstore.svg" alt="AppStore">
-        </div>
-    </div>
-    </div>
     </div>
 </header>
 <section class="offers_sec">
     <div class="container">
-    <div class="offers_header">What do we offer</div>
-    <div class="offers">
-        <div class="offer">
-            <img src="images/earphones.svg" alt="Earphones wth mic">
-            <p class="offer_type">Support 24/7</p>
+        <div class="offers_header">What do we offer</div>
+        <div class="offers">
+            <div class="offer col-md-6 col-sm-6 col-xs-12">
+                <div class="offer_img">
+                    <svg class="offer_image">
+                        <use href="icons.svg#earphones"></use>
+                    </svg>
+                </div>
+                <p class="offer_type">Support 24/7</p>
+            </div>
+            <div class="offer col-md-6 col-sm-6 col-xs-12">
+                <div class="offer_img">
+                    <svg class="offer_image">
+                        <use href="icons.svg#chat"></use>
+                    </svg>
+                </div>
+                <p class="offer_type">Communicate directly</p>
+            </div>
+            <div class="offer col-md-6 col-sm-6 col-xs-12">
+                <div class="offer_img">
+                    <svg class="offer_image">
+                        <use href="icons.svg#computer"></use>
+                    </svg>
+                </div>
+                <p class="offer_type">Book online</p>
+            </div>
+            <div class="offer col-md-6 col-sm-6 col-xs-12">
+                <div class="offer_img">
+                    <svg class="offer_image">
+                        <use href="icons.svg#like"></use>
+                    </svg>
+                </div>
+                <p class="offer_type">Real guest reviews</p>
+            </div>
         </div>
-        <div class="offer">
-            <img src="images/chat.svg" alt="Chat">
-            <p class="offer_type">Communicate directly</p>
-        </div>
-        <div class="offer">
-            <img src="images/computer.svg" alt="book_online">
-            <p class="offer_type">Book online</p>
-        </div>
-        <div class="offer">
-            <img src="images/like.svg" alt="like">
-            <p class="offer_type">Real guest reviews</p>
-        </div>
-    </div>
     </div>
 </section>
 <section class="homes_sec">
     <div class="container">
-    <div class="homes_header">Homes guests loves</div>
-    <div class="homes">
-        <div class="home_photo">
-            <img class="photo" src="images/leopold.png" alt="Hotel Leopold">
-            <p class="homes_type">Hotel Leopold</p>
-            <p class="location">Saint Petersburg, Russia</p>
+        <div class="homes_header">Homes guests loves</div>
+        <div class="homes">
+            <div class="home_photo">
+                <img class="photo" src="images/leopold.png" alt="Hotel Leopold">
+                <p class="homes_type">Hotel Leopold</p>
+                <p class="location">Saint Petersburg, Russia</p>
+            </div>
+            <div class="home_photo">
+                <img class="photo" src="images/sunshine.png" alt="Apartment Sunshine">
+                <p class="homes_type">Apartment Sunshine</p>
+                <p class="location">Santa Cruz de Tenerife, Spain</p>
+            </div>
+            <div class="home_photo">
+                <img class="photo" src="images/kunerad.png" alt="Villa Kunerad">
+                <p class="homes_type">Villa Kunerad</p>
+                <p class="location">Vysokie Tatry, Slowakia</p>
+            </div>
+            <div class="home_photo">
+                <img class="photo" src="images/friendship.png" alt="Hostel Friendship">
+                <p class="homes_type">Hostel Friendship</p>
+                <p class="location">Berlin, Germany</p>
+            </div>
         </div>
-        <div class="home_photo">
-            <img class="photo" src="images/sunshine.png" alt="Apartment Sunshine">
-            <p class="homes_type">Apartment Sunshine</p>
-            <p class="location">Santa Cruz de Tenerife, Spain</p>
-        </div>
-        <div class="home_photo">
-            <img class="photo" src="images/kunerad.png" alt="Villa Kunerad">
-            <p class="homes_type">Villa Kunerad</p>
-            <p class="location">Vysokie Tatry, Slowakia</p>
-        </div>
-        <div class="home_photo">
-            <img class="photo" src="images/friendship.png" alt="Hostel Friendship">
-            <p class="homes_type">Hostel Friendship</p>
-            <p class="location">Berlin, Germany</p>
-        </div>
-    </div>
     </div>
 </section>
 <footer class="footer">
     <div class="container">
-        <div class="footer_logo"><img class="logotype" src="images/triphouse.svg" alt="TripHouse"></div>
+        <div class="footer_logo">
+            <img class="logotype" src="images/tripHouse.svg" alt="TripHouse">
+        </div>
         <div class="footer_menu">
-            <ul class="footer_list">
+            <ul class="footer_list col-md-4 col-sm-4 col-xs-4">
                 <li class="menu_header"><a href="#">About</a></li>
                 <li class="menu_items"><a href="#">Triphouse works</a></li>
                 <li class="menu_items"><a href="#">Careers</a></li>
                 <li class="menu_items"><a href="#">Privacy</a></li>
                 <li class="menu_items"><a href="#">Terms</a></li>
             </ul>
-            <ul class="footer_list">
+            <ul class="footer_list col-md-4 col-sm-4 col-xs-4">
                 <li class="menu_header"><a href="#">Property types</a></li>
                 <li class="menu_items"><a href="#">Guest houses</a></li>
                 <li class="menu_items"><a href="#">Hotels</a></li>
@@ -131,7 +153,7 @@
                 <li class="menu_items"><a href="#">Holiday homes</a></li>
                 <li class="menu_items"><a href="#">Hostels</a></li>
             </ul>
-            <ul class="footer_list">
+            <ul class="footer_list col-md-4 col-sm-4 col-xs-4">
                 <li class="menu_header"><a href="#">Support</a></li>
                 <li class="menu_items"><a href="#">Contact Custom Service</a></li>
                 <li class="menu_items"><a href="#">FAQ</a></li>
@@ -142,3 +164,4 @@
 </footer>
 </body>
 </html>
+
