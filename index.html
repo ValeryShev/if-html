@@ -16,8 +16,10 @@
                     <use href="icons.svg#logo"></use>
                 </svg>
                 <nav class="header_menu">
-                    <div class="header_link">Stays</div>
-                    <div class="header_link">Attractions</div>
+                    <div class="header_link_block">
+                        <a class="header_link" href="#">Stays</a>
+                        <a class="header_link" href="#">Attractions</a>
+                    </div>
                     <div class="header_images">
                         <svg class="image">
                             <use href="icons.svg#night"></use>
@@ -33,21 +35,19 @@
             <div class="slogan">Discover stays<br>
                 to live, work or just relax</div>
             <form class="search_form">
-                <div class="form_block destination">
-                    <input class="form_input" type="text" name="hotel" id="destination" placeholder="Destination">
-                    <div class="label_block">
-                        <label for="destination" class="form_label">Your destination or hotel name</label>
-                    </div>
+                <div class="form_block destination col-md-4 col-sm-12 col-xs-12">
+                    <input class="form_dest" type="text" name="hotel" id="destination" placeholder="Destination">
+                    <label for="destination" class="form_label">Your destination or hotel name</label>
+
                 </div>
-                <div class="form_block date">
-                    <input class="form_input" type="text" name="date" id="in_date" placeholder="Date">
-                    <input class="form_input" type="text" name="date" id="out_date" placeholder="Date">
-                    <div class="label_block">
-                        <label for="in_date" class="form_label">Check-in</label>
-                        <label for="out_date" class="form_label">Check-out</label>
-                    </div>
+                <div class="form_block date col-md-3 col-sm-12 col-xs-1">
+                    <input class="form_check_in" type="text" name="date" id="in_date" placeholder="Date">
+                    <label for="in_date" class="form_label">Check-in</label>
+                    <input class="form_check_out" type="text" name="date" id="out_date" placeholder="Date">
+                    <label for="out_date" class="form_label">Check-out</label>
+
                 </div>
-                <div class="form_block">
+                <div class="form_block people col-md-3 col-sm-12 col-xs-12">
                     <p>Adults</p>
                     <p>Children</p>
                     <p>Rooms</p>
@@ -67,38 +67,30 @@
 </header>
 <section class="offers_sec">
     <div class="container">
-        <div class="offers_header">What do we offer</div>
+        <h2>What do we offer</h2>
         <div class="offers">
-            <div class="offer col-md-6 col-sm-6 col-xs-12">
-                <div class="offer_img">
-                    <svg class="offer_image">
-                        <use href="icons.svg#earphones"></use>
-                    </svg>
-                </div>
+            <div class="offer">
+                <svg class="offer_image">
+                    <use href="icons.svg#earphones"></use>
+                </svg>
                 <p class="offer_type">Support 24/7</p>
             </div>
-            <div class="offer col-md-6 col-sm-6 col-xs-12">
-                <div class="offer_img">
-                    <svg class="offer_image">
-                        <use href="icons.svg#chat"></use>
-                    </svg>
-                </div>
+            <div class="offer">
+                <svg class="offer_image">
+                    <use href="icons.svg#chat"></use>
+                </svg>
                 <p class="offer_type">Communicate directly</p>
             </div>
-            <div class="offer col-md-6 col-sm-6 col-xs-12">
-                <div class="offer_img">
-                    <svg class="offer_image">
-                        <use href="icons.svg#computer"></use>
-                    </svg>
-                </div>
+            <div class="offer">
+                <svg class="offer_image">
+                    <use href="icons.svg#computer"></use>
+                </svg>
                 <p class="offer_type">Book online</p>
             </div>
-            <div class="offer col-md-6 col-sm-6 col-xs-12">
-                <div class="offer_img">
-                    <svg class="offer_image">
-                        <use href="icons.svg#like"></use>
-                    </svg>
-                </div>
+            <div class="offer">
+                <svg class="offer_image">
+                    <use href="icons.svg#like"></use>
+                </svg>
                 <p class="offer_type">Real guest reviews</p>
             </div>
         </div>
@@ -106,28 +98,223 @@
 </section>
 <section class="homes_sec">
     <div class="container">
-        <div class="homes_header">Homes guests loves</div>
+        <h2>Homes guests loves</h2>
         <div class="homes">
             <div class="home_photo">
-                <img class="photo" src="images/leopold.png" alt="Hotel Leopold">
+                <img class="homes_photo" src="images/leopold.png" alt="Hotel Leopold">
                 <p class="homes_type">Hotel Leopold</p>
-                <p class="location">Saint Petersburg, Russia</p>
+                <p class="homes_location">Saint Petersburg, Russia</p>
             </div>
             <div class="home_photo">
-                <img class="photo" src="images/sunshine.png" alt="Apartment Sunshine">
+                <img class="homes_photo" src="images/sunshine.png" alt="Apartment Sunshine">
                 <p class="homes_type">Apartment Sunshine</p>
-                <p class="location">Santa Cruz de Tenerife, Spain</p>
+                <p class="homes_location">Santa Cruz de Tenerife, Spain</p>
             </div>
             <div class="home_photo">
-                <img class="photo" src="images/kunerad.png" alt="Villa Kunerad">
+                <img class="homes_photo" src="images/kunerad.png" alt="Villa Kunerad">
                 <p class="homes_type">Villa Kunerad</p>
-                <p class="location">Vysokie Tatry, Slowakia</p>
+                <p class="homes_location">Vysokie Tatry, Slowakia</p>
             </div>
             <div class="home_photo">
-                <img class="photo" src="images/friendship.png" alt="Hostel Friendship">
+                <img class="homes_photo" src="images/friendship.png" alt="Hostel Friendship">
                 <p class="homes_type">Hostel Friendship</p>
-                <p class="location">Berlin, Germany</p>
+                <p class="homes_location">Berlin, Germany</p>
             </div>
+        </div>
+        <div class="arrow_btn">
+            <button class="arrow_button"><img src="images/arrow.svg" alt=""></button>
+        </div>
+    </div>
+</section>
+<section class="destinations_sec">
+    <div class="container">
+        <h2 class="destinations_header">The best destinations</h2>
+        <div class="dest_tabs">
+            <input type="radio" id="tab_region" name="tab" checked="checked">
+            <label for="tab_region">Regions</label>
+            <div class="destinations">
+                <div class="destination_photo">
+                    <img class="dest_photo" src="images/maldives.png" alt="Maldives">
+                    <p class="dest_location">Maldives</p>
+                </div>
+                <div class="destination_photo">
+                    <img class="dest_photo" src="images/spain.png" alt="Spain">
+                    <p class="dest_location">Spain</p>
+                </div>
+                <div class="destination_photo">
+                    <img class="dest_photo" src="images/norway.png" alt="Norway">
+                    <p class="dest_location">Norway</p>
+                </div>
+                <div class="destination_photo">
+                    <img class="dest_photo" src="images/island.png" alt="Island">
+                    <p class="dest_location">Island</p>
+                </div>
+            </div>
+            <input type="radio" id="tab_cities" name="tab">
+            <label for="tab_cities">Cities</label>
+            <div class="destinations">
+                <div class="destination_photo">
+                    <img class="dest_photo" src="images/berlin.png" alt="Berlin">
+                    <p class="dest_location">Berlin, Germany</p>
+                </div>
+                <div class="destination_photo">
+                    <img class="dest_photo" src="images/paris.png" alt="Paris">
+                    <p class="dest_location">Paris, France</p>
+                </div>
+                <div class="destination_photo">
+                    <img class="dest_photo" src="images/budapest.png" alt="Budapest">
+                    <p class="dest_location">Budapest, Hungary</p>
+                </div>
+                <div class="destination_photo">
+                    <img class="dest_photo" src="images/london.png" alt="London">
+                    <p class="dest_location">Londod, United Kingdom</p>
+                </div>
+            </div>
+            <input type="radio" id="tab_places" name="tab">
+            <label for="tab_places">Places of interest</label>
+            <div class="destinations">
+                <div class="destination_photo">
+                    <img class="dest_photo" src="images/edinburgh.png" alt="Edinburgh Castle">
+                    <p class="dest_location">Edinburgh Castle, Edinburgh, United Kingdom</p>
+                </div>
+                <div class="destination_photo">
+                    <img class="dest_photo" src="images/neusch.png" alt="Neuschwanstein">
+                    <p class="dest_location">Neuschwanstein, Fussen, Germany</p>
+                </div>
+                <div class="destination_photo">
+                    <img class="dest_photo" src="images/bigBen.png" alt="Big Ben">
+                    <p class="dest_location">Big Ben, London, United Kingdom</p>
+                </div>
+                <div class="destination_photo">
+                    <img class="dest_photo" src="images/colosseuem.png" alt="Colosseum">
+                    <p class="dest_location">Colosseum, Roma, Italy</p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow_btn">
+            <button class="arrow_button"><img src="images/arrow.svg" alt=""></button>
+        </div>
+    </div>
+</section>
+<section class="sign_sec">
+    <div class="container">
+        <div class="sign_up">
+            <div class="sign_icon">
+                <svg class="sgn_icon">
+                    <use href="icons.svg#sign"></use>
+                </svg>
+            </div>
+            <div class="sign_content">
+                <p class="sign_text">Sign up and get 20% off your first booking</p>
+                <button class="sign_button">Sign up</button>
+            </div>
+            <div class="sign_close">
+                <svg class="sgn_close" height="26px" width="26px">
+                    <use href="icons.svg#cross"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="reviews_sec">
+    <div class="container">
+        <h2 class="reviews_header">Guests reviews</h2>
+        <div class="reviews">
+            <div class="review_information">
+                <div class="review_photo">
+                    <img class="reviews_photo" src="images/ubud.png" alt="Ubud Bali Resort&SPA">
+                    <p class="price">From 250 USD</p>
+                </div>
+                <div class="reviews_content">
+                    <div class="reviews_hotel">
+                        <p class="reviews_type">Ubud Bali Resort&SPA</p>
+                        <div class="reviews_rating">9,4</div>
+                    </div>
+                    <div class="review_block">
+                        <p class="reviews_location">Bali, Indonesia</p>
+                        <p class="reviews_number">1324 reviews</p>
+                    </div>
+                    <div class="reviews_account">
+                        <svg class="review_acc">
+                            <use href="icons.svg#account"></use>
+                        </svg>
+                        <div class="review_user">
+                            <p class="user_name">Hanna Ivanova</p>
+                            <p class="user_country">
+                                <svg class="country">
+                                    <use href="icons.svg#ukraine"></use>
+                                </svg>
+                                Ukraine</p>
+                        </div>
+                    </div>
+                    <p class="reviews_description">Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.</p>
+                </div>
+            </div>
+            <div class="review_information">
+                <div class="review_photo">
+                    <img class="reviews_photo" src="images/king.png" alt="King Kong Hostel">
+                    <p class="price">From 40 USD</p>
+                </div>
+                <div class="reviews_content">
+                    <div class="reviews_hotel">
+                        <p class="reviews_type">King Kong Hostel</p>
+                        <div class="reviews_rating">8,9</div>
+                    </div>
+                    <div class="review_block">
+                        <p class="reviews_location">Rotterdam, Netherlands</p>
+                        <p class="reviews_number">2016 reviews</p>
+                    </div>
+                    <div class="reviews_account">
+                        <svg class="review_acc">
+                            <use href="icons.svg#account"></use>
+                        </svg>
+                        <div class="review_user">
+                            <p class="user_name">Adam Smith</p>
+                            <p class="user_country">
+                                <svg class="country">
+                                    <use href="icons.svg#usa"></use>
+                                </svg>
+                                USA</p>
+                        </div>
+                    </div>
+                    <p class="reviews_description">I've been in this hostel for a month and here is the best hostel of all<br>
+                        Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent<br>
+                        Most importantly, those who work here are kind and good-natured.</p>
+                </div>
+            </div>
+            <div class="review_information">
+                <div class="review_photo">
+                    <img class="reviews_photo" src="images/rokoko.png" alt="Rokoko Hotel">
+                    <p class="price">From 100 USD</p>
+                </div>
+                <div class="reviews_content">
+                    <div class="reviews_hotel">
+                        <p class="reviews_type">Rokoko Hotel</p>
+                        <div class="reviews_rating">9,1</div>
+                    </div>
+                    <div class="review_block">
+                        <p class="reviews_location">Ourika, Marocco</p>
+                        <p class="reviews_number">815 reviews</p>
+                    </div>
+                    <div class="reviews_account">
+                        <svg class="review_acc">
+                            <use href="icons.svg#account"></use>
+                        </svg>
+                        <div class="review_user">
+                            <p class="user_name">Anika Messer</p>
+                            <p class="user_country">
+                                <svg class="country">
+                                    <use href="icons.svg#germany"></use>
+                                </svg>
+                                Gemany</p>
+                        </div>
+                    </div>
+                    <p class="reviews_description">Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.</p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow_btn">
+            <button class="arrow_button"><img src="images/arrow.svg" alt=""></button>
         </div>
     </div>
 </section>
@@ -164,4 +351,5 @@
 </footer>
 </body>
 </html>
+
 
