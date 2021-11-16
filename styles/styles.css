@@ -11,6 +11,14 @@ html, body {
 }
 
 :root {
+    --homdest-image-height: 290px;
+    /*--homdest-mob-height: 155px;*/
+    /*--rev-image-height: 400px;*/
+    /*--rev-mob-height: 325px;*/
+    --homdest-image-width: 290px;
+    /*--homdest-mob-width: 155px;*/
+    /*--rev-image-width: 400px;*/
+    /*--rev-mob-width: 325px;*/
     --columns-count: 12;
 }
 
@@ -361,12 +369,13 @@ input:focus{
 
 .homes {
     display: flex;
+    position: relative;
     justify-content: space-between;
 }
 
 .home_photo {
     display: block;
-    width: 100%;
+    width: 25%;
     height: 100%;
     margin: 0 0 0 25px;
 }
@@ -376,8 +385,8 @@ input:focus{
 }
 
 .homes_photo {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: var(--homdest-image-height);
 }
 
 .homes_type{
@@ -400,11 +409,10 @@ input:focus{
     font-size: 24px;
 }
 
-.homes_sec>.container>.arrow_btn {
-    display: flex;
+.homes_sec>.container>.homes>.arrow_button {
     position: absolute;
-    top: 50vh;
-    right: 5vw;
+    top: calc(var(--homdest-image-height) / 2 - 20px);
+    right: 0;
 }
 
 .destinations_sec{
