@@ -403,8 +403,8 @@ input:focus{
 .homes_sec>.container>.arrow_btn {
     display: flex;
     position: absolute;
-    top: 40%;
-    right: 5%;
+    top: 50vh;
+    right: 5vw;
 }
 
 .destinations_sec{
@@ -481,10 +481,9 @@ input:focus{
 
 .destinations_sec>.container>.arrow_btn {
     display: flex;
-    margin-top: 48px;
-    margin-bottom: 120px;
-    align-items: flex-end;
-    justify-content: center;
+    position: absolute;
+    top: 90%;
+    right: 50%;
 }
 
 .destinations_sec>.container>.arrow_btn>.arrow_button {
@@ -1001,6 +1000,13 @@ footer {
         line-height: 14px;
     }
 
+    .homes_sec>.container>.arrow_btn {
+        display: flex;
+        position: absolute;
+        top: 45%;
+        right: 2%;
+    }
+
     .destinations_sec{
         height: 100%;
         padding-top: 40px;
@@ -1033,8 +1039,8 @@ footer {
     .destinations_sec>.container>.arrow_btn {
         display: flex;
         position: absolute;
-        top: 40%;
-        right: 5%;
+        top: 55%;
+        right: 2%;
     }
 
     .destinations_sec>.container>.arrow_btn>.arrow_button {
