@@ -488,14 +488,14 @@ input:focus{
     color: #3077C6;
 }
 
-.destinations_sec>.container>.arrow_btn {
+.destinations_sec>.container>.dest_tabs>.arrow_button {
     display: flex;
     position: absolute;
     top: 90%;
     right: 50%;
 }
 
-.destinations_sec>.container>.arrow_btn>.arrow_button {
+.destinations_sec>.container>.dest_tabs>.arrow_button {
     transform: rotate(100grad);
 }
 
@@ -570,8 +570,10 @@ input:focus{
 }
 
 .reviews {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .review_information {
@@ -713,11 +715,11 @@ input:focus{
     color: #383838;
 }
 
-.reviews_sec>.container>.arrow_btn {
+.reviews_sec>.container>.reviews>.arrow_button {
     display: flex;
     position: absolute;
-    top: 35%;
-    right: 5%;
+    top: 20%;
+    right: 0;
 }
 
 footer {
@@ -836,13 +838,21 @@ footer {
         line-height: 25px;
     }
 
+    .homes_sec>.container>.homes>.arrow_button {
+        top: 20%;
+    }
+
     .sign_text {
         font-size: 16px;
         line-height: 25px;
     }
 
-    .review_information:last-child {
+    .review_information:nth-child(3) {
         display: none;
+    }
+
+    .reviews_sec>.container>.reviews>.arrow_button {
+        top: 15%;
     }
 }
 
@@ -1070,10 +1080,10 @@ footer {
         line-height: 14px;
     }
 
-    .homes_sec>.container>.arrow_btn {
+    .homes_sec>.container>.homes>.arrow_button {
         display: flex;
         position: absolute;
-        top: 45%;
+        top: 35%;
         right: 2%;
     }
 
@@ -1106,14 +1116,14 @@ footer {
         line-height: 14px;
     }
 
-    .destinations_sec>.container>.arrow_btn {
+    .destinations_sec>.container>.dest_tabs>.arrow_button {
         display: flex;
         position: absolute;
         top: 55%;
-        right: 2%;
+        right: 0;
     }
 
-    .destinations_sec>.container>.arrow_btn>.arrow_button {
+    .destinations_sec>.container>.dest_tabs>.arrow_button {
         transform: rotate(0grad);
     }
 
@@ -1255,7 +1265,7 @@ footer {
         line-height: 18px;
     }
 
-    .reviews_sec>.container>.arrow_btn {
+    .reviews_sec>.container>.reviews>.arrow_button {
         display: none;
     }
 
